@@ -7,13 +7,14 @@ touch main.go
 .
 .
 .
-got mod init y44k0v/myapp
+go mod init y44k0v/myapp
 git init
 git add .
 git commit -m "1st comment"
 goreleaser init
 // without remote repo
 goreleaser release --snapshot --clean
+// adding remote repo
 git remote add origin https://github.com/y44k0v/testOfgoreleaser.git
 git remote set-url origin https://y44k0v:$GITHUB_TOKEN@github.com/y44k0v/testOfgoreleaser.git
 git push -u origin master
@@ -26,10 +27,6 @@ rm -rf dist
 goreleaser release --snapshot 
 rm -rf dist
 goreleaser release
-
-
-
-
 
 
 ```
