@@ -1,5 +1,6 @@
 ## goreleaser quick guide
 
+
 ```
 mkdir myapp
 cd myapp
